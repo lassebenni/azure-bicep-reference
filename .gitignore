@@ -1,0 +1,4 @@
+*.json
+!**/bicepconfig.json
+.azure/
+.DS_Store

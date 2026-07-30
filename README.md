@@ -2,7 +2,7 @@
 
 Code-along and practice branches for HackYourFuture Data Track **Week 14** (Azure Bicep).
 
-This is **not** the graded assignment. Submit work in [data-assignment-week-14](https://github.com/HackYourFuture/data-assignment-week-14).
+This is **not** the graded assignment. Submit work in [c55-data-week-14](https://github.com/HackYourAssignment/c55-data-week-14).
 
 ## Quick start
 
@@ -10,7 +10,7 @@ This is **not** the graded assignment. Submit work in [data-assignment-week-14](
 git clone https://github.com/lassebenni/azure-bicep-reference.git
 cd azure-bicep-reference
 az login
-export CLASS_RG=rg-hyf-students   # replace if your teacher gave a different name
+export CLASS_RG=rg-hyf-students   # shared class resource group
 ```
 
 Use a unique storage name (`sthyf` + your handle, lowercase, 3–24 chars). Confirm `az account show` is the shared HYF subscription.

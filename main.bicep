@@ -1,21 +1,20 @@
-// main.bicep: Chapter 3 solution — single-file storage account
+// main.bicep — Chapter 4 solution: thin entry that calls the storage module
 
-// param = input at deploy time
-param location string = resourceGroup().location  // default: same region as the resource group
-param storageName string                          // required: pass with --parameters storageName=...
+param location string = resourceGroup().location
+param storageName string
+param containerName string = 'raw'
 
-// var = value reused inside this file (not passed at deploy time)
-var storageKind = 'StorageV2'
+// Dummy unused secret for hygiene practice — pass at deploy time, never commit the value
+@secure()
+param dbAdminPassword string
 
-// resource = what should exist (type + API version after @)
-resource storage 'Microsoft.Storage/storageAccounts@2023-01-01' = {
-  name: storageName
-  location: location
-  sku: {
-    name: 'Standard_LRS'
+module storage 'modules/storage.bicep' = {
+  name: 'storageDeploy'
+  params: {
+    location: location
+    storageName: storageName
+    containerName: containerName
   }
-  kind: storageKind
 }
 
-// output = value returned after a successful deploy
-output storageId string = storage.id
+output storageId string = storage.outputs.storageId

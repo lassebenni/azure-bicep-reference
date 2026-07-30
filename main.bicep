@@ -1,9 +1,8 @@
-// Practice starter: add environment param + Environment tag (see EXERCISE.md)
+// Practice solution: one storage account, environment via parameter + tag
 
 param location string = resourceGroup().location
 param storageName string
-// TODO: param environment string  (e.g. 'dev' or 'prod')
-// TODO: set tags: { Environment: environment } on the storage resource
+param environment string  // e.g. 'dev' or 'prod'
 
 var storageKind = 'StorageV2'
 
@@ -14,7 +13,9 @@ resource storage 'Microsoft.Storage/storageAccounts@2023-01-01' = {
     name: 'Standard_LRS'
   }
   kind: storageKind
-  // TODO: tags: { Environment: environment }
+  tags: {
+    Environment: environment
+  }
 }
 
 output storageId string = storage.id

@@ -2,3 +2,5 @@
 !**/bicepconfig.json
 .azure/
 .DS_Store
+
+!.vscode/extensions.json

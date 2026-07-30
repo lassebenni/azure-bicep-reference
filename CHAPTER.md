@@ -1,7 +1,7 @@
-# Chapter 3 starter — Azure Bicep
+# Chapter 3 solution — Azure Bicep
 
-Fill in `main.bicep` (param, var, resource, output), then deploy into `$CLASS_RG`.
+Finished single-file storage account template. Diff against your work:
 
-Curriculum: [Azure Bicep](https://github.com/lassebenni/hyf-datatrack/blob/main/Data%20Track/Week%2014/week_14__3_bicep.md)
-
-When stuck: `git diff week-14-ch-3-bicep-solution -- main.bicep`
+```bash
+git diff week-14-ch-3-bicep -- main.bicep
+```

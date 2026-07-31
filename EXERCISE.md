@@ -10,7 +10,7 @@ You already have a module + nested container. Add secret hygiene:
 
 ```bash
 export CLASS_RG=rg-hyf-students
-# pass a dummy only on the CLI — do not put it in a committed parameters file
+# pass a dummy only on the CLI: do not put it in a committed parameters file
 az deployment group what-if \
   --resource-group "$CLASS_RG" \
   --template-file main.bicep \

@@ -1,4 +1,4 @@
-// main.bicep — Practice starter: module + nest; add @secure (see EXERCISE.md)
+// main.bicep: Practice starter: module + nest; add @secure (see EXERCISE.md)
 
 param location string = resourceGroup().location
 param storageName string

@@ -1,4 +1,4 @@
-# Chapter 4 starter — Bicep in practice
+# Chapter 4 starter: Bicep in practice
 
 You start from the Chapter 3 finished template. Refactor it:
 

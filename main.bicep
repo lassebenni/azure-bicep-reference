@@ -1,4 +1,4 @@
-// main.bicep: Chapter 3 solution — single-file storage account
+// main.bicep: Chapter 3 solution: single-file storage account
 
 // param = input at deploy time
 param location string = resourceGroup().location  // default: same region as the resource group

@@ -1,4 +1,4 @@
-// main.bicep: practice solution for Exercise 4: module + nested container + () dummy param
+// main.bicep: practice solution for Exercise 4: module + nested container + @secure() dummy param
 
 param location string = resourceGroup().location
 param storageName string

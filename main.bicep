@@ -1,4 +1,4 @@
-// main.bicep: Chapter 3 solution — single-file storage account
+// main.bicep: practice starter for Exercise 3 (single file; split it into a module + nested container, see EXERCISE.md)
 
 // param = input at deploy time
 param location string = resourceGroup().location  // default: same region as the resource group

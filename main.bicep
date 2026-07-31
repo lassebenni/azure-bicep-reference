@@ -1,4 +1,4 @@
-// main.bicep — Chapter 3 starter
+// main.bicep: practice starter for Exercise 1 (single storage account; see EXERCISE.md)
 // TODO: add param location (default resourceGroup().location)
 // TODO: add param storageName (required, no default)
 // TODO: add var storageKind = 'StorageV2'

@@ -1,4 +1,4 @@
-// modules/storage.bicep — storage account + nested blob container
+// modules/storage.bicep: storage account + nested blob container
 
 param location string
 param storageName string

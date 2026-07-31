@@ -1,4 +1,4 @@
-// main.bicep — Chapter 4 solution: thin entry that calls the storage module
+// main.bicep: practice solution for Exercise 3: thin entry that calls the storage module
 
 param location string = resourceGroup().location
 param storageName string

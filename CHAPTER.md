@@ -1,4 +1,4 @@
-# Chapter 3 solution — Azure Bicep
+# Chapter 3 solution: Azure Bicep
 
 Finished single-file storage account template. Diff against your work:
 

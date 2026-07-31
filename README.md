@@ -1,6 +1,6 @@
 # azure-bicep-reference (Week 14)
 
-**This branch is write-up only** (`WRITEUP.md`). No `main.bicep` here — use the chapter / other practice branches for deploy work.
+**This branch is write-up only** (`WRITEUP.md`). No `main.bicep` here: use the chapter / other practice branches for deploy work.
 
 
 Code-along and practice branches for HackYourFuture Data Track **Week 14** (Azure Bicep).
@@ -33,8 +33,8 @@ Validate without deploying: `az bicep build --file main.bicep`
 
 | Chapter | Work on | Compare against |
 | --- | --- | --- |
-| Ch3 — Azure Bicep | [`week-14-ch-3-bicep`](https://github.com/lassebenni/azure-bicep-reference/tree/week-14-ch-3-bicep) | [`week-14-ch-3-bicep-solution`](https://github.com/lassebenni/azure-bicep-reference/tree/week-14-ch-3-bicep-solution) |
-| Ch4 — Bicep in practice | [`week-14-ch-4-bicep`](https://github.com/lassebenni/azure-bicep-reference/tree/week-14-ch-4-bicep) | [`week-14-ch-4-bicep-solution`](https://github.com/lassebenni/azure-bicep-reference/tree/week-14-ch-4-bicep-solution) |
+| Ch3: Azure Bicep | [`week-14-ch-3-bicep`](https://github.com/lassebenni/azure-bicep-reference/tree/week-14-ch-3-bicep) | [`week-14-ch-3-bicep-solution`](https://github.com/lassebenni/azure-bicep-reference/tree/week-14-ch-3-bicep-solution) |
+| Ch4: Bicep in practice | [`week-14-ch-4-bicep`](https://github.com/lassebenni/azure-bicep-reference/tree/week-14-ch-4-bicep) | [`week-14-ch-4-bicep-solution`](https://github.com/lassebenni/azure-bicep-reference/tree/week-14-ch-4-bicep-solution) |
 
 ```bash
 git switch week-14-ch-3-bicep

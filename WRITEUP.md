@@ -1,6 +1,6 @@
 # IaC write-up (sample)
 
-This is a **sample** tone and length — write your own experience; do not submit this text as yours.
+This is a **sample** tone and length: write your own experience; do not submit this text as yours.
 
 ## What I deployed
 
@@ -12,7 +12,7 @@ Clicking through the portal is fine once. It fails when a teammate needs the sam
 
 ## One thing that surprised me
 
-`what-if` after a no-change redeploy reporting nothing to do made idempotency concrete — the template describes the desired end state, not a script of create steps. Separately, `@secure()` parameters forced the habit of passing dummies only on the CLI so secrets never land in git.
+`what-if` after a no-change redeploy reporting nothing to do made idempotency concrete: the template describes the desired end state, not a script of create steps. Separately, `@secure()` parameters forced the habit of passing dummies only on the CLI so secrets never land in git.
 
 ## Optional: evidence links
 

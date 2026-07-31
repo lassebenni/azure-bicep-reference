@@ -1,10 +1,10 @@
-// main.bicep — Chapter 4 solution: thin entry that calls the storage module
+// main.bicep: practice solution for Exercise 4: module + nested container + () dummy param
 
 param location string = resourceGroup().location
 param storageName string
 param containerName string = 'raw'
 
-// Dummy unused secret for hygiene practice — pass at deploy time, never commit the value
+// Dummy unused secret for hygiene practice: pass at deploy time, never commit the value
 @secure()
 param dbAdminPassword string
 

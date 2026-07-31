@@ -1,12 +1,10 @@
-// main.bicep — Chapter 4 solution: thin entry that calls the storage module
+// main.bicep — Practice starter: module + nest; add @secure (see EXERCISE.md)
 
 param location string = resourceGroup().location
 param storageName string
 param containerName string = 'raw'
 
-// Dummy unused secret for hygiene practice — pass at deploy time, never commit the value
-@secure()
-param dbAdminPassword string
+// TODO: add @secure() param dbAdminPassword string  (unused dummy; pass at deploy time, never commit)
 
 module storage 'modules/storage.bicep' = {
   name: 'storageDeploy'

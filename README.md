@@ -1,5 +1,8 @@
 # azure-bicep-reference (Week 14)
 
+**This branch is write-up only** (`WRITEUP.md`). No `main.bicep` here — use the chapter / other practice branches for deploy work.
+
+
 Code-along and practice branches for HackYourFuture Data Track **Week 14** (Azure Bicep).
 
 This is **not** the graded assignment. Submit work in [c55-data-week-14](https://github.com/HackYourAssignment/c55-data-week-14).

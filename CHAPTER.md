@@ -1,4 +1,4 @@
-# Chapter 3 starter — Azure Bicep
+# Chapter 3 starter: Azure Bicep
 
 Fill in `main.bicep` (param, var, resource, output), then deploy into `$CLASS_RG`.
 

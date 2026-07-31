@@ -30,8 +30,8 @@ Validate without deploying: `az bicep build --file main.bicep`
 
 | Chapter | Work on | Compare against |
 | --- | --- | --- |
-| Ch3 — Azure Bicep | [`week-14-ch-3-bicep`](https://github.com/lassebenni/azure-bicep-reference/tree/week-14-ch-3-bicep) | [`week-14-ch-3-bicep-solution`](https://github.com/lassebenni/azure-bicep-reference/tree/week-14-ch-3-bicep-solution) |
-| Ch4 — Bicep in practice | [`week-14-ch-4-bicep`](https://github.com/lassebenni/azure-bicep-reference/tree/week-14-ch-4-bicep) | [`week-14-ch-4-bicep-solution`](https://github.com/lassebenni/azure-bicep-reference/tree/week-14-ch-4-bicep-solution) |
+| Ch3: Azure Bicep | [`week-14-ch-3-bicep`](https://github.com/lassebenni/azure-bicep-reference/tree/week-14-ch-3-bicep) | [`week-14-ch-3-bicep-solution`](https://github.com/lassebenni/azure-bicep-reference/tree/week-14-ch-3-bicep-solution) |
+| Ch4: Bicep in practice | [`week-14-ch-4-bicep`](https://github.com/lassebenni/azure-bicep-reference/tree/week-14-ch-4-bicep) | [`week-14-ch-4-bicep-solution`](https://github.com/lassebenni/azure-bicep-reference/tree/week-14-ch-4-bicep-solution) |
 
 ```bash
 git switch week-14-ch-3-bicep

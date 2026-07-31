@@ -1,4 +1,4 @@
-# Chapter 4 solution — Bicep in practice
+# Chapter 4 solution: Bicep in practice
 
 Module + nested container + `@secure() param dbAdminPassword string` (dummy at deploy time).
 

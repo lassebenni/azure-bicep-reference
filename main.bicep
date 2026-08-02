@@ -6,7 +6,7 @@ param environment string  // e.g. 'dev' or 'prod'
 
 var storageKind = 'StorageV2'
 
-resource storage 'Microsoft.Storage/storageAccounts@2023-01-01' = {
+resource storage 'Microsoft.Storage/storageAccounts@2026-04-01' = {
   name: storageName
   location: location
   sku: {

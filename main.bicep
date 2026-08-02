@@ -8,7 +8,7 @@ param storageName string                          // required: pass with --param
 var storageKind = 'StorageV2'
 
 // resource = what should exist (type + API version after @)
-resource storage 'Microsoft.Storage/storageAccounts@2023-01-01' = {
+resource storage 'Microsoft.Storage/storageAccounts@2026-04-01' = {
   name: storageName
   location: location
   sku: {

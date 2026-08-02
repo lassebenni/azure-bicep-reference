@@ -1,12 +1,39 @@
 # Chapter 4 starter: Bicep in practice
 
-You start from the Chapter 3 finished template. Refactor it:
+You start from the Chapter 3 finished template: one `main.bicep` with a storage
+account in it. Refactor it into a module, nest a container inside the account,
+and preview before you apply.
 
-1. Move the storage account into `modules/storage.bicep` and call it from `main.bicep`.
-2. Add a nested blob container (`parent:` + default blob service).
-3. Add `@secure() param dbAdminPassword string` (pass a dummy at deploy/what-if time; never commit a secret).
-4. Run `az deployment group what-if` before you apply changes.
+Chapter: **[Bicep in practice](https://www.notion.so/hackyourfuture/Bicep-in-practice-9fc8b2f9aba64c2b962d49bd98e0b47c)**
 
-Curriculum: [Bicep in practice](https://github.com/lassebenni/hyf-datatrack/blob/main/Data%20Track/Week%2014/week_14__4_bicep_in_practice.md)
+Each step below names the section that explains it. Read that section first, then
+write the code; the chapter has the working snippet for every one.
 
-When stuck: `git diff week-14-ch-4-bicep-solution`
+| # | Do this | Explained in |
+|---|---|---|
+| 1 | Move the storage account into `modules/storage.bicep` and call it from `main.bicep` with `module` + `params:` | *Modules* |
+| 2 | Return `storageId` from the module and read it in `main.bicep` as `storage.outputs.storageId` | *Modules* |
+| 3 | Add the nested blob container: a `blobServices` resource named `default` with `parent: storage`, then the container with `parent: blobService` | *Nested child resources* |
+| 4 | Add `@secure() param dbAdminPassword string` and pass a dummy value at deploy time. Never commit a real one | *Keeping secrets out of templates* |
+| 5 | Run `az deployment group what-if` before you apply, and read the diff | *Preview with what-if* |
+| 6 | Delete the account when you are done | *Tearing down* |
+
+Two things that surprise people, both covered in the chapter:
+
+- **`what-if` stops saying "no change"** once a container exists. The container and
+  blob service always report `~` with `-` property lines underneath. Read the
+  storage account line, not the resource count. See *Reading a noisy preview*.
+- **`$CLASS_RG` is shared**, so your preview also lists classmates' accounts with
+  a `*` (Ignore). Those are not yours and will not change.
+
+## Checking your work
+
+```bash
+git diff week-14-ch-4-bicep-solution
+```
+
+An empty diff means you match the solution. If you only want the module:
+
+```bash
+git diff week-14-ch-4-bicep-solution -- modules/storage.bicep
+```

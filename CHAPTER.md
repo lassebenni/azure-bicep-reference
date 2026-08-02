@@ -14,7 +14,7 @@ write the code; the chapter has the working snippet for every one.
 | 1 | Move the storage account into `modules/storage.bicep` and call it from `main.bicep` with `module` + `params:` | *Modules* |
 | 2 | Return `storageId` from the module and read it in `main.bicep` as `storage.outputs.storageId` | *Modules* |
 | 3 | Add the nested blob container: a `blobServices` resource named `default` with `parent: storage`, then the container with `parent: blobService` | *Nested child resources* |
-| 4 | Add `@secure() param dbAdminPassword string` and pass a dummy value at deploy time. Never commit a real one | *Keeping secrets out of templates* |
+| 4 | Add `@secure() param dbAdminPassword string` and pass a dummy value at deploy time. Never commit a real one. Note what it does **not** protect: a value typed on the command line still lands in your shell history | *Keeping secrets out of templates* |
 | 5 | Run `az deployment group what-if` before you apply, and read the diff | *Preview with what-if* |
 | 6 | Delete the account when you are done | *Tearing down* |
 
